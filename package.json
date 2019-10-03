@@ -1,35 +1,38 @@
 {
-  "name": "dbffile",
-  "version": "1.2.0",
-  "description": "Read and write .dbf (dBase III) files in Node.js",
+  "name": "@ethiclab/dbffile",
+  "version": "1.0.0",
+  "description": "Read and write .dbf (dBase III) files in Node.js (forked from https://www.npmjs.com/package/dbffile 1.2.0)",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p src && tsc -p test && ncp test/fixtures dist/test/fixtures",
     "clean": "rimraf dist/",
     "prepublish": "npm run self-ref && npm run build",
-    "test": "mocha --timeout 999999 --colors ./dist/test",
+    "test": "yarn clean && yarn build && mocha --timeout 999999 --colors ./dist/test",
     "self-ref": "node ./scripts/enable-self-reference"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yortus/DBFFile.git"
+    "url": "https://github.com/ethiclab/DBFFile.git"
   },
   "keywords": [
     "dbf",
     "dBase",
-    "dBase III"
+    "dBase III",
+    "0x83",
+    "dBase IV",
+    "0x8B"
   ],
   "author": {
-    "name": "Troy Gerwien",
-    "email": "yortus@gmail.com",
-    "url": "http://github.com/yortus/"
+    "name": "EthicLab",
+    "email": "tech@ethiclab.it",
+    "url": "http://github.com/ethiclab/"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yortus/DBFFile/issues"
+    "url": "https://github.com/ethiclab/DBFFile/issues"
   },
-  "homepage": "https://github.com/yortus/DBFFile",
+  "homepage": "https://github.com/ethiclab/DBFFile",
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.7",

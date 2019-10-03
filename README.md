@@ -1,4 +1,21 @@
-# DBFFile
+# DBFFile (Forked from https://github.com/yortus/DBFFile)
+
+### Reasons of the fork
+
+This fork is an attempt to add support for:
+
+1. dBase IV 0x8B file format. (EXPERIMENTAL)
+
+### Pre-requisites
+
+1. yarn
+2. typescript
+
+### Build
+
+1. yarn run build
+2. yarn test
+3. yarn run prepublish
 
 ### Summary
 
